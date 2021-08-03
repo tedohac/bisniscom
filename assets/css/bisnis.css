@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'tahuFont';
+    src: url('../font/Tahu.ttf');
+}
+.brand h1 {
+    font-family: 'tahuFont';
+}
+
+@media screen and (min-width: 767px) {
+    .brand h1 {
+        font-size: 5rem;
+    }
+}
+
+.logo-image {
+    width: 120px;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+.red-background {
+    background-color: #e42c2d;
+}
+
+.text-merah {
+    color: #e42c2d !important;
+}
+
+.link-merah:hover {
+    color: #e42c2d !important;
+}
+
+.page-header {
+    position: relative;
+}
+
+.page-header-background {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+
+    z-index: 0;
+    background: url('../img/background.png') no-repeat left center / cover;
+    
+    -webkit-animation: animatedPageHeader 2s ;
+    animation: animatedPageHeader 2s ;
+}
+.main {
+    max-width: 950px;
+    margin: 0px auto;
+}
+
+.main-raised {
+    width: auto;
+    margin: 0px auto 0px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.container-video {
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+}
+#player {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#img-video {
+    width: 100%;
+    height: 100%;
+}
+
+#card-1 {
+    background: url('../img/card-bg-1.png') no-repeat center;
+    background-size: cover;
+}
+
+#card-2 {
+    background: url('../img/card-bg-2.png') no-repeat center;
+    background-size: cover;
+}
+
+.card-pattern {
+    background: url('../img/card-pattern-1.png') no-repeat center;
+    background-size: cover;
+}
+
+#card-3 .card-body {
+    background: url('../img/presiden.png') no-repeat center;
+    background-size: cover;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    color: #666;
+    padding: 0;
+    padding-top: 10px;
+}
+.footer-link {
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+    top: 20px;
+}
+.footer-link a {
+    color: #333;
+    margin: 0 22px;
+    font-weight: 600;
+}
+#back-to-top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    z-index: 999;
+    bottom: 30px;
+    right: 15px;
+    outline: none!important;
+    text-align: center;
+    color: #333!important;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .main-raised {
+        -webkit-animation: slideup 2s 1s;
+        animation: slideup 2s 1s;
+        animation-fill-mode: forwards;  
+    }
+}
+
+@media (max-width: 768px) {
+    .brand h1 {
+        font-size: 2.5rem !important;
+    }
+    .main-raised {
+        margin: 0;
+        margin-top: -50px;
+    }
+    .container-video {
+        margin: 0;
+        max-width: none !important;
+    }
+}
+
+@-webkit-keyframes animatedPageHeader {
+    from {
+        opacity: 0;
+        left: -15%; 
+        right: -15%;
+        top: -15%;
+        bottom: -15%;
+        height: 130%;
+        width: 130%;
+    }
+    to {
+        opacity: 1;
+        left: 0; 
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@keyframes animatedPageHeader {
+    from {
+        opacity: 0;
+        left: -15%; 
+        right: -15%;
+        top: -15%;
+        bottom: -15%;
+        height: 130%;
+        width: 130%;
+    }
+    to {
+        opacity: 1;
+        left: 0; 
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes slideup {
+    from {
+      margin-top: 0px;
+    }
+    to {
+      margin-top: -150px;
+    }
+}
+
+@keyframes slideup {
+    from {
+      margin-top: 0px;
+    }
+    to {
+      margin-top: -150px;
+    }
+  }
