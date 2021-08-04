@@ -1,1 +1,1 @@
-<p align="center"><a href="https://static.bisnis-cdn.com/bisnis/assets/images/2020/logo-footer.svg" width="400"></a></p>
+<p align="center"><a href="https://github.com/tedohac/bisniscom/blob/master/assets/img/bisnis-logo.png?raw=true" width="400"></a></p>
