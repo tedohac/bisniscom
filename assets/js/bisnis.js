@@ -78,32 +78,23 @@ $(document).ready(function() {
     });
     // end back to top
 
-    // scrollreveal
-    var scrollRevealOption = {
-        duration   : 600,
-        distance   : '20px',
-        easing     : 'ease-out',
-        origin     : 'bottom',
-        reset      : true,
-        scale      : 1,
-        viewFactor : 0,
-        afterReveal  : revealChildren,
-      };
+    /* global ScrollReveal */
+    const sr = window.sr = ScrollReveal({ mobile: false })
       
-    ScrollReveal().reveal('#card-1', { delay: 500, scale : 1, distance : '20px', easing : 'ease-out', origin : 'left', reset : true, afterReveal  : revealChildren });
-    ScrollReveal().reveal('#card-2', { delay: 1000, scale : 1, distance : '20px', easing : 'ease-out', origin : 'right', reset : true, afterReveal : revealChildren });
+    sr.reveal('#card-1', { delay: 500, scale : 1, viewFactor : 0, distance : '20px', easing : 'ease-out', origin : 'left', reset : true, afterReveal : revealChildren }, 150);
+    sr.reveal('#card-2', { delay: 1000, scale : 1, viewFactor : 0, distance : '20px', easing : 'ease-out', origin : 'right', reset : true, afterReveal : revealChildren }, 150);
 
-    var revealChildren = ScrollReveal().reveal('.judulText, .narsumHost', {
+    sr.reveal('#news-1', { delay: 500, scale : 1, viewFactor : 0, distance : '20px', easing : 'ease-out', origin : 'right', reset : true, afterReveal : revealChildren }, 150);
+    sr.reveal('#news-2', { delay: 1000, scale : 1, viewFactor : 0, distance : '20px', easing : 'ease-out', origin : 'right', reset : true, afterReveal : revealChildren }, 150);
+    sr.reveal('#news-3', { delay: 1500, scale : 1, viewFactor : 0, distance : '20px', easing : 'ease-out', origin : 'right', reset : true, afterReveal : revealChildren }, 150);
+    
+    var revealChildren = sr.reveal('.card-reveal', {
         duration   : 500,
         scale      : 1,
         distance   : '20px',
         origin     : 'bottom',
         reset      : true,
         easing     : 'ease-out',
-        viewFactor : 1,
-      });
-
-      ScrollReveal().reveal('#news-1', { delay: 500, scale : 1, distance : '20px', easing : 'ease-out', origin : 'right', reset : true });
-      ScrollReveal().reveal('#news-2', { delay: 1000, scale : 1, distance : '20px', easing : 'ease-out', origin : 'right', reset : true });
-      ScrollReveal().reveal('#news-3', { delay: 1500, scale : 1, distance : '20px', easing : 'ease-out', origin : 'right', reset : true });
+        viewFactor : 0.6
+      }, 75);
 });

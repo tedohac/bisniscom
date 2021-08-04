@@ -12,6 +12,11 @@
     }
 }
 
+.brand p {
+    font-size: 1.313rem;
+    margin: 10px auto 0;
+}
+
 .logo-image {
     width: 120px;
     overflow: hidden;
@@ -75,6 +80,7 @@
 #img-video {
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 #card-1 {
